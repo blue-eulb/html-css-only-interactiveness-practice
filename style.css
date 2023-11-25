@@ -1,0 +1,149 @@
+body {
+    height: 500vh;
+    font-family: 'Times New Roman', Times, serif;
+    background: darkslategray;
+    margin: 0;
+    text-align: left;
+}
+/* NAV BAR HERE */
+#navbar{
+    margin: 0;
+}
+#nav-list {
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(130, 130, 130, 1);
+    height: 100px;
+    width: 100%;
+    background-color: rgb(31, 69, 69);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.cards, a {
+    height: 100%;
+    text-decoration: none;
+    color: rgb( 255, 215, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.cards:first-of-type {
+    margin-left: 40px;
+    justify-content: left;
+    flex: 4;
+}
+a:hover, .cards:hover {
+    color: whitesmoke;
+}
+.cards::after {
+    position: absolute;
+    right: 0;
+    content: "";
+    border: .3px solid rgba(130, 130, 130, 1);
+    height: 40%;
+}
+/* DROP DOWN */
+.dropdown {
+    background-color: inherit;
+    position: relative;
+}
+.dropdown-content {
+    min-width: 100px;
+    padding: 6%;
+    border: 1px solid rgba(130, 130, 130, 1);
+    background-color: inherit;
+    position: absolute;
+    top: 100% ;
+    width: 80%;
+    display: none;
+    border-radius: 0px 0px 20px 20px;
+}
+.dropdown-content button {
+    color: rgb( 255, 215, 0);
+    background-color: inherit;
+    padding: 12px;
+    border: none;
+}
+.dropdown-content button:last-child{
+    border-radius: 0px 0px 12px 12px;
+}
+.dropdown-content button:hover {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* CONTACT CARD */
+#contact-overlay {
+    padding: 0px;
+    background-color: rgb(41, 70, 70, .5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.contact:focus-within #contact-overlay {
+    display: block;
+}
+#contact-card {
+    color: rgb( 255, 215, 0);
+    border: 1px solid rgba(130, 130, 130, 1);
+    background-color: rgb(31, 69, 69);
+    border-radius: 15px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    animation: scale .5s ease;
+}
+#contact-card button {
+    color: inherit;
+    border: none;
+    background-color: inherit;
+    height: 60px;
+    border-radius: 20px;
+    width: 70%;
+    padding: 15px;
+}
+#contact-card button:hover {
+    color: darkslategray;
+    background-color: whitesmoke;
+}
+@keyframes scale {
+    0% {scale: .1;
+        top: 30%;
+        right: -200px;
+    }
+    100% {scale: 1;
+        top: 30%;
+        right: 20%;
+    }
+}
+/* INTRO SECTION */
+#home {
+    color: rgb( 255, 215, 0);
+    font-size: 3rem;
+    padding-top: 100px;
+    height: 700px;
+    background-color: rgb(60, 116, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
