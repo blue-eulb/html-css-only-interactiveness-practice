@@ -103,7 +103,7 @@ a:hover, .cards:hover {
     background-color: rgb(31, 69, 69);
     border-radius: 15px;
     position: absolute;
-    top: 30%;
+    top: 35%;
     right: 20%;
     height: 300px;
     width: 500px;
@@ -129,11 +129,11 @@ a:hover, .cards:hover {
 }
 @keyframes scale {
     0% {scale: .1;
-        top: 30%;
+        top: 35%;
         right: -200px;
     }
     100% {scale: 1;
-        top: 30%;
+        top: 35%;
         right: 20%;
     }
 }
