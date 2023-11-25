@@ -71,6 +71,7 @@ a:hover, .cards:hover {
     border: none;
 }
 .dropdown-content button:last-child{
+    border-bottom: .2px solid rgba(130, 130, 130, .5);
     border-radius: 0px 0px 12px 12px;
 }
 .dropdown-content button:hover {
@@ -141,7 +142,7 @@ a:hover, .cards:hover {
     color: rgb( 255, 215, 0);
     font-size: 3rem;
     padding-top: 100px;
-    height: 700px;
+    height: 900px;
     background-color: rgb(60, 116, 116);
     display: flex;
     justify-content: center;
